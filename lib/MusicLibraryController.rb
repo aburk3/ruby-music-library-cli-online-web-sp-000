@@ -1,6 +1,7 @@
 require 'pry'
 
 class MusicLibraryController
+  extend Concerns::Findable
 
   def initialize(file_path = './db/mp3s')
     @file_path = file_path
@@ -48,6 +49,6 @@ class MusicLibraryController
     input = gets.chomp
   end
 
-  
+
 
 end
